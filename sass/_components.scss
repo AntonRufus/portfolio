@@ -1,0 +1,135 @@
+///////////////////////////////////////////////////
+// ANIMATION
+@keyframes pulsate {
+  0% {
+    box-shadow: none;
+  }
+
+  50% {
+    text-shadow: 0 .2rem .4rem var(--color-primary-dark);
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  50% {
+    box-shadow: 0 .5rem .5rem var(--color-primary-dark);
+    text-shadow: 0 .25rem .5rem var(--color-primary-dark);
+    color: var(--color-primary);
+  }
+
+  100% {
+    box-shadow: none;
+    text-shadow: none;
+  }
+}
+
+///////////////////////////////////////////////////
+// LOGO
+.logo {
+  padding-bottom: .5rem;
+  margin-left: 11%;
+  width: 8rem;
+
+  &:hover {
+    border-bottom: .3rem solid var(--color-primary);
+    padding-bottom: .2rem;
+    text-decoration: underline;
+  }
+}
+
+///////////////////////////////////////////////////
+// NAVIGATION
+.nav {
+  margin-right: 11%;
+
+  &__item {
+    margin: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 25%;
+    color: var(--color-primary-dark);
+    font-size: 2.5rem;
+    outline: none;
+    padding: 1rem;
+    transition: all .2s;
+    width: 11rem;
+
+    &:hover {
+      animation: pulsate-btn 3s 1;
+      //box-shadow: 0 .5rem .5rem var(--color-primary-dark);
+      //color: var(--color-primary);
+    }
+  }
+}
+
+///////////////////////////////////////////////////
+// INTRODUCTION
+.introduction {
+  font-size: 3rem;
+  margin-top: 15%;
+  margin-left: 11%;
+  display: flex;
+  flex-direction: column;
+  transition: all .2s;
+
+  &__text {
+    &-position {
+      color: var(--color-primary);
+      transition: all .2s;
+      animation: pulsate 3s infinite;
+
+      &:hover {
+        text-shadow: 0 1rem 1rem var(--color-primary-dark);
+        transition: all .2s;
+      }
+    }
+  }
+
+  &__name {
+    color: var(--color-primary-dark);
+    font-size: 9rem;
+  }
+
+  &__arrow {
+    animation: pulsate-btn 3s infinite;
+    background-color: transparent;
+    border: none;
+    border-radius: 100rem;
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 18%;
+    outline: none;
+    padding: 1.5rem 1.5rem;
+    transition: all .2s;
+    width: 6rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /*&:hover {
+      text-shadow: 0 .25rem .5rem var(--color-primary-dark);
+      box-shadow: 0 .5rem .5rem var(--color-primary-dark);
+      color: var(--color-primary);
+    }*/
+  }
+}

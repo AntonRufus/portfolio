@@ -1,0 +1,172 @@
+:root {
+  --color-primary:        #42B9FC;
+  --color-primary-light:  #A3D3FF;
+  --color-primary-dark:   #00AFFA;
+  --color-bgc-dark: #000000;
+  --color-bgc-light: #003853;
+  --shadow-dark-30:       0 2rem 6rem rgba(0, 0, 0, .30);
+  --shadow-light-06:      0 2rem 5rem rgba(0, 0, 0, .06);
+  --line:                 1px solid var(--color-grey-light-2); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right bottom, var(--color-bgc-light), var(--color-bgc-dark), var(--color-bgc-light));
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-primary-light);
+  min-height: 100vh; }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */ }
+
+body::-webkit-scrollbar-track {
+  background: #003853;
+  /* color of the tracking area */ }
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary-dark);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #003853;
+  /* creates padding around scroll thumb */ }
+
+body {
+  -moz-scrollbar-width: thin;
+  /* "auto" or "thin" */
+  scrollbar-width: thin;
+  /* "auto" or "thin" */
+  -moz-scrollbar-color: #00affa #003853;
+  /* scroll thumb and track */
+  scrollbar-color: #00affa #003853;
+  /* scroll thumb and track */ }
+
+::selection {
+  background-color: var(--color-primary-dark);
+  color: white; }
+
+@keyframes pulsate {
+  0% {
+    box-shadow: none; }
+  50% {
+    text-shadow: 0 0.2rem 0.4rem var(--color-primary-dark); }
+  100% {
+    box-shadow: none; } }
+
+@keyframes pulsate-btn {
+  0% {
+    box-shadow: none;
+    text-shadow: none; }
+  50% {
+    box-shadow: 0 0.5rem 0.5rem var(--color-primary-dark);
+    text-shadow: 0 0.25rem 0.5rem var(--color-primary-dark);
+    color: var(--color-primary); }
+  100% {
+    box-shadow: none;
+    text-shadow: none; } }
+
+.logo {
+  padding-bottom: .5rem;
+  margin-left: 11%;
+  width: 8rem; }
+  .logo:hover {
+    border-bottom: 0.3rem solid var(--color-primary);
+    padding-bottom: .2rem;
+    text-decoration: underline; }
+
+.nav {
+  margin-right: 11%; }
+  .nav__item {
+    margin: 0 1rem; }
+    .nav__item a {
+      text-decoration: none;
+      color: inherit; }
+  .nav__btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 25%;
+    color: var(--color-primary-dark);
+    font-size: 2.5rem;
+    outline: none;
+    padding: 1rem;
+    transition: all .2s;
+    width: 11rem; }
+    .nav__btn:hover {
+      animation: pulsate-btn 3s 1; }
+
+.introduction {
+  font-size: 3rem;
+  margin-top: 15%;
+  margin-left: 11%;
+  display: flex;
+  flex-direction: column;
+  transition: all .2s; }
+  .introduction__text-position {
+    color: var(--color-primary);
+    transition: all .2s;
+    animation: pulsate 3s infinite; }
+    .introduction__text-position:hover {
+      text-shadow: 0 1rem 1rem var(--color-primary-dark);
+      transition: all .2s; }
+  .introduction__name {
+    color: var(--color-primary-dark);
+    font-size: 9rem; }
+  .introduction__arrow {
+    animation: pulsate-btn 3s infinite;
+    background-color: transparent;
+    border: none;
+    border-radius: 100rem;
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 18%;
+    outline: none;
+    padding: 1.5rem 1.5rem;
+    transition: all .2s;
+    width: 6rem;
+    /*&:hover {
+      text-shadow: 0 .25rem .5rem var(--color-primary-dark);
+      box-shadow: 0 .5rem .5rem var(--color-primary-dark);
+      color: var(--color-primary);
+    }*/ }
+    .introduction__arrow a {
+      text-decoration: none;
+      color: inherit; }
+
+.container {
+  max-width: 120rem;
+  margin: 5rem auto;
+  box-shadow: var(--shadow-dark-30);
+  min-height: 90rem; }
+
+.header {
+  display: flex;
+  margin-bottom: 10rem;
+  padding: 5rem 0 2rem 0;
+  justify-content: space-between; }
+
+.nav {
+  display: flex;
+  align-self: center; }
+
+.content {
+  min-height: 50vh; }

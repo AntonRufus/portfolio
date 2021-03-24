@@ -1,0 +1,35 @@
+//////////// main container
+.container {
+  max-width: 120rem;
+  margin: 5rem auto;
+  box-shadow: var(--shadow-dark-30);
+  min-height: 90rem;
+}
+
+//////////// header
+.header {
+  display: flex;
+  margin-bottom: 10rem;
+  padding:  5rem 0 2rem 0;
+
+  justify-content: space-between;
+}
+
+//////////// navigation
+.nav {
+  display: flex;
+  align-self: center;
+}
+
+//////////// content
+.content {
+  min-height: 50vh;
+}
+
+////////////
+
+
+////////////
+
+
+////////////
