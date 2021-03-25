@@ -133,3 +133,69 @@
     }*/
   }
 }
+
+///////////////////////////////////////////////////
+// ABOUT
+.about {
+  margin: 20rem 11%;
+  margin-bottom: 10rem;
+
+  &__text {
+    margin-bottom: 2rem;
+    margin-left: 25%;
+    text-align: justify;
+  }
+}
+
+///////////////////////////////////////////////////
+// BANNER
+.banner {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-image: url(../img/hello.png);
+  min-height: 30rem;
+  margin-bottom: 10rem;
+}
+
+///////////////////////////////////////////////////
+// SKILLS
+.skills {
+  display: flex;
+  flex-direction: column;
+
+  &__tech {
+
+  }
+
+  &__soft {
+
+  }
+}
+
+///////////////////////////////////////////////////
+// BACKGROUND VIDEO
+.bg-video {
+
+}
+
+///////////////////////////////////////////////////
+// PROJECTS
+.projects {
+
+}
+
+///////////////////////////////////////////////////
+// CONTACTS
+.contacts {
+
+}
+
+///////////////////////////////////////////////////
+// FOOTER
+.footer {
+  min-height: 100rem;
+}
