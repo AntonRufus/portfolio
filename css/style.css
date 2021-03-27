@@ -151,9 +151,10 @@ body {
       color: inherit; }
 
 .about {
-  margin: 20rem 11%;
+  margin: 25rem 11%;
   margin-bottom: 10rem; }
   .about__text {
+    font-size: 2rem;
     margin-bottom: 2rem;
     margin-left: 25%;
     text-align: justify; }
@@ -165,12 +166,55 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url(../img/hello.png);
-  min-height: 30rem;
-  margin-bottom: 10rem; }
+  min-height: 25rem;
+  margin-bottom: 5rem; }
 
 .skills {
   display: flex;
-  flex-direction: column; }
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 2rem;
+  position: relative; }
+  .skills__header {
+    color: var(--color-primary);
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  .skills ul li {
+    list-style: none;
+    margin: 0 10%;
+    margin-bottom: 1rem;
+    width: 100%;
+    min-height: 4rem; }
+    .skills ul li a {
+      display: flex;
+      text-decoration: none; }
+      .skills ul li a span {
+        margin-left: 1rem;
+        color: var(--color-primary-light); }
+  .skills__tech {
+    display: flex;
+    align-content: flex-start;
+    flex-flow: column wrap;
+    margin-left: 11%; }
+  .skills__soft {
+    display: flex;
+    align-content: flex-end;
+    flex-flow: column wrap;
+    margin-right: 11%; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .3;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .footer {
   min-height: 100rem; }
