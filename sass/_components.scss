@@ -227,14 +227,15 @@
   &__tech, &__soft {
     display: flex;
     flex-flow: column wrap;
-    margin-left: 11%;
   }
 
   &__tech {
+    margin-left: 11%;
     align-content: flex-start;
   }
 
   &__soft {
+    margin-right: 11%;
     align-content: flex-end;
 
     .sub-header {
@@ -433,7 +434,8 @@
 ///////////////////////////////////////////////////
 // CONTACTS
 .contacts {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+
   ul ul {
     display: flex;
     justify-content: center;
@@ -446,7 +448,7 @@
   }
 
   & .linkedin {
-    padding-left: 9.2rem;
+    padding-left: 9rem;
   }
 
   a {
@@ -467,7 +469,15 @@
     }
 
     img {
-      margin: .3rem;
+      transition: all .2s;
+    }
+
+    .contacts__list-margin {
+      transition: all .2s;
+
+      &:hover {
+        margin-right: 1.5rem;
+      }
     }
   }
 }
@@ -475,4 +485,18 @@
 ///////////////////////////////////////////////////
 // FOOTER
 .footer {
+  text-align: center;
+  padding-bottom: 2rem;
+
+  a {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    padding: 0 1rem;
+    border-radius: 1000rem;
+
+    &:hover {
+      color: var(--color-primary);
+      animation: pulsate-btn 1.5s 1;
+    }
+  }
 }
