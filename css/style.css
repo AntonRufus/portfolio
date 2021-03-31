@@ -215,11 +215,12 @@ body {
         color: var(--color-primary-light); }
   .skills__tech, .skills__soft {
     display: flex;
-    flex-flow: column wrap;
-    margin-left: 11%; }
+    flex-flow: column wrap; }
   .skills__tech {
+    margin-left: 11%;
     align-content: flex-start; }
   .skills__soft {
+    margin-right: 11%;
     align-content: flex-end; }
     .skills__soft .sub-header {
       margin-bottom: 23px; }
@@ -351,7 +352,7 @@ body {
     width: auto; }
 
 .contacts {
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
   .contacts ul ul {
     display: flex;
     justify-content: center; }
@@ -359,7 +360,7 @@ body {
     flex-basis: 30%;
     list-style: none; }
   .contacts .linkedin {
-    padding-left: 9.2rem; }
+    padding-left: 9rem; }
   .contacts a {
     text-decoration: none;
     color: inherit;
@@ -373,7 +374,23 @@ body {
       .contacts a span:hover {
         color: var(--color-primary); }
     .contacts a img {
-      margin: .3rem; }
+      transition: all .2s; }
+    .contacts a .contacts__list-margin {
+      transition: all .2s; }
+      .contacts a .contacts__list-margin:hover {
+        margin-right: 1.5rem; }
+
+.footer {
+  text-align: center;
+  padding-bottom: 2rem; }
+  .footer a {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    padding: 0 1rem;
+    border-radius: 1000rem; }
+    .footer a:hover {
+      color: var(--color-primary);
+      animation: pulsate-btn 1.5s 1; }
 
 .container {
   max-width: 120rem;
