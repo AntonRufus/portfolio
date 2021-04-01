@@ -17,12 +17,58 @@
     <header class="header">
 
         <!-- logo -->
-        <img src="img/logo.png" alt="logo" class="logo">
+        <img src="img/logo.png" alt="logo" class="logo" id="home">
 
         <!-- nab bar -->
-        <nav class="nav" id="home">
+        <nav class="nav">
 
-            <!-- nab item -->
+            <!-- mini nav -->
+            <div class="nav-mini">
+                <input type="checkbox" class="nav-mini__checkbox" id="nav-mini-toggle">
+                <div class="nav-mini__background">&nbsp;</div>
+
+                <label for="nav-mini-toggle" class="nav-mini__button">
+                    <span class="nav-mini__icon"></span>
+                </label>
+
+                <div class="nav-mini__nav">
+                    <ul class="nav-mini__list">
+                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
+                            <a href="#" class="nav-mini__link">
+                                Home
+                            </a>
+                        </li>
+                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
+                            <a href="#about" class="nav-mini__link">
+                                About
+                            </a>
+                        </li>
+                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
+                            <a href="#skills" class="nav-mini__link">
+                                Skills
+                            </a>
+                        </li>
+                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
+                            <a href="#projects" class="nav-mini__link">
+                                Projects
+                            </a>
+                        </li>
+                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
+                            <a href="./img/cv.pdf" class="nav-mini__link"
+                               download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">
+                                Resume
+                            </a>
+                        </li>
+                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
+                            <a href="#contacts" class="nav-mini__link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- nav item -->
             <div class="nav__item">
                 <button class="nav__btn">
                     <a href="#about">
@@ -31,7 +77,7 @@
                 </button>
             </div>
 
-            <!-- nab item -->
+            <!-- nav item -->
             <div class="nav__item">
                 <button class="nav__btn">
                     <a href="#skills">
@@ -40,7 +86,7 @@
                 </button>
             </div>
 
-            <!-- nab item -->
+            <!-- nav item -->
             <div class="nav__item">
                 <button class="nav__btn">
                     <a href="#projects">
@@ -49,16 +95,19 @@
                 </button>
             </div>
 
-            <!-- nab item -->
+            <!-- nav item -->
             <div class="nav__item">
                 <button class="nav__btn">
-                    <a href="./img/cv.pdf" download="Frontend web developer CV 2021 Anton Zhyvotovskyi.pdf">
+                    <!--Resume
+                    <a class="nav__btn-resume-pdf" href="./img/cv.pdf" download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">.pdf</a>
+                    <a class="nav__btn-resume-docx" href="./img/cv.docx" download="Frontend web developer 2021 Anton Zhyvotovskyi.docx">.docx</a>-->
+                    <a href="./img/cv.pdf" download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">
                         Resume
                     </a>
                 </button>
             </div>
 
-            <!-- nab item -->
+            <!-- nav item -->
             <div class="nav__item">
                 <button class="nav__btn">
                     <a href="#contacts">
@@ -89,6 +138,16 @@
                 </a>
                 <!--&#9661;-->
             </button>
+
+            <!-- background video -->
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video_2k.mp4" type="video/mp4">
+                    <source src="img/video_2k.webm" type="video/webm">
+                    Your browser is not supported!
+                </video>
+            </div>
+
         </section>
 
         <!-- about -->
@@ -102,7 +161,7 @@
             <!-- paragraph 1 -->
             <p class="about__text">
                 <span>
-                    I'm self-taught web developer and have about one year of experience in front-end.
+                    I'm a self-taught web developer and have about one year of experience in front-end.
                 </span>
                 <span>
                     The main technologies that I primarily use during the development of my projects are React, Redux, JavaScript, HTML and CSS (SASS).
@@ -140,7 +199,7 @@
             <!-- tech skills -->
             <div class="skills__tech">
                 <div class="sub-header">
-                    Tech skills
+                    Hard skills
                 </div>
                 <ul>
                     <!----------------------------------------------------------------------------->
@@ -156,7 +215,7 @@
                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> <img
                                 src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_css3-512.png"
                                 alt="css3" width="40" height="40"/>
-                            <span>Flexbox, GRID</span>
+                            <span>Flexbox, Grid</span>
                         </a>
                     </li>
                     <!----------------------------------------------------------------------------->
@@ -213,7 +272,7 @@
                         <a href="https://www.npmjs.com/" target="_blank">
                             <img src="https://www.vectorlogo.zone/logos/npmjs/npmjs-tile.svg" alt="npmjs" width="40"
                                  height="40"/>
-                            <span>Npm</span>
+                            <span>NPM</span>
                         </a>
                     </li>
                     <!----------------------------------------------------------------------------->
@@ -317,6 +376,7 @@
                                             <li>React-Router-DOM</li>
                                             <li>React-Redux</li>
                                             <li>React.lazy</li>
+                                            <li>React.memo</li>
                                         </ul>
                                     </li>
                                     <!-- Redux -->
@@ -526,6 +586,12 @@
                                         </ul>
                                     </li>
 
+                                    <!-- Javascript -->
+                                    <li>
+                                        <ul>
+                                            <h3>Javascript</h3>
+                                        </ul>
+                                    </li>
                                 </ul>
 
                                 <!-- button -->
@@ -789,60 +855,65 @@
             </div>
 
             <!-- contacts list -->
-            <div class="contacts__list">
-                <ul>
-                    <!----------------------------------------------------------------------------->
-                    <ul>
-                        <li>
-                            <a href="tel:+86-182-0167-71-21" target="_blank">
-                                <div class="contacts__list-margin">
-                                    <img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
-                                         alt="WhatsApp" width="40" height="40">
+            <ul class="contacts__list">
+                <!----------------------------------------------------------------------------->
+                <li>
+                    <a href="tel:+86-182-0167-71-21" target="_blank">
+                        <div class="contacts__list-img">
+                            <img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
+                                 alt="WhatsApp"
+                                 width="40" height="40">
 
-                                    <img src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Viber-512.png"
-                                         alt="Viber" width="40" height="40"/>
+                            <img src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Viber-512.png"
+                                 alt="Viber"
+                                 width="40" height="40"/>
 
-                                    <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/telegram-512.png"
-                                         alt="Telegram" width="40" height="40"/>
-                                </div>
-
-                                <span>+86-182-0167-71-21</span>
-                            </a>
-                        </li>
-                        <!----------------------------------------------------------------------------->
-                        <li>
-                            <a href="mailto:zhyvotovskyi@gmail.com" target="_blank">
-                                <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/outlook-512.png"
-                                     alt="Email" width="40" height="40" class="contacts__list-margin"/>
-                                <span>zhyvotovskyi@gmail.com</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <!----------------------------------------------------------------------------->
-                    <ul>
-                        <li class="linkedin">
-                            <a href="https://www.linkedin.com/in/anton-zhyvotovskyi/" target="_blank">
-                                <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_linkedin-512.png"
-                                     alt="LinkedIn" width="40" height="40" class="contacts__list-margin"/>
-                                <span>Anton Zhyvotovskyi</span>
-                            </a>
-                        </li>
-                        <!----------------------------------------------------------------------------->
-                        <li>
-                            <a href="https://github.com/AntonRufus" target="_blank">
-                                <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png"
-                                     alt="GitHub" width="40" height="40" class="contacts__list-margin"/>
-                                <span>Anton Rufus</span>
-                            </a>
-                        </li>
-                    </ul>
-                </ul>
-            </div>
+                            <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/telegram-512.png"
+                                 alt="Telegram"
+                                 width="40" height="40"/>
+                        </div>
+                        <span>+86-182-0167-71-21</span>
+                    </a>
+                </li>
+                <!----------------------------------------------------------------------------->
+                <li>
+                    <a href="mailto:zhyvotovskyi@gmail.com" target="_blank">
+                        <div class="contacts__list-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/outlook-512.png"
+                                 alt="Email"
+                                 width="40" height="40"/>
+                        </div>
+                        <span>zhyvotovskyi@gmail.com</span>
+                    </a>
+                </li>
+                <!----------------------------------------------------------------------------->
+                <li class="contacts__list-one">
+                    <a href="https://www.linkedin.com/in/anton-zhyvotovskyi/" target="_blank">
+                        <div class="contacts__list-img">
+                            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_linkedin-512.png"
+                                 alt="LinkedIn"
+                                 width="40" height="40"/>
+                        </div>
+                        <span>Anton Zhyvotovskyi</span>
+                    </a>
+                </li>
+                <!----------------------------------------------------------------------------->
+                <li class="contacts__list-one">
+                    <a href="https://github.com/AntonRufus" target="_blank">
+                        <div class="contacts__list-img">
+                            <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png"
+                                 alt="GitHub"
+                                 width="40" height="40"/>
+                        </div>
+                        <span>Anton Rufus</span>
+                    </a>
+                </li>
+            </ul>
         </section>
 
         <!-- footer -->
         <section class="footer">
-            <a href="#home">2021 &copy; Anton Zhyvotovskyi.</a>
+            <a href="#">2021 &copy; Anton Zhyvotovskyi.</a>
             <!--paste QR for github page-->
         </section>
     </div>

@@ -1,23 +1,28 @@
 :root {
-  --color-primary:        #42B9FC;
-  --color-primary-light:  #A3D3FF;
-  --color-primary-dark:   #00AFFA;
+  --color-primary: #42B9FC;
+  --color-primary-light: #A3D3FF;
+  --color-primary-dark: #00AFFA;
 
   --color-bgc-dark: #000000;
   --color-bgc-light: #003853;
 
-  --shadow-dark-30:       0 2rem 6rem rgba(0, 0, 0, .30);
-  --shadow-light-06:      0 2rem 5rem rgba(0, 0, 0, .06);
+  --shadow-dark-30: 0 2rem 6rem rgba(0, 0, 0, .30);
+  --shadow-light-06: 0 2rem 5rem rgba(0, 0, 0, .06);
 }
 
-$bp-largest:    75em;       // 1200px
-$bp-large:      68.75em;    // 1100px
-$bp-medium:     57.85em;    // 925px
-$bp-medium:     57.85em;    // 925px
-$bp-small:      41.25em;    // 660px
-$bp-smaller:    34.7em;     // 555px
-$bp-smaller2:   29.7em;     // 475px
-$bp-smaller3:   25em;       // 400px
+$big-desktop: 112.5em;  // 1800px
+$bp-largest2: 90em;     // 1440px
+$bp-largest: 75em;      // 1200px
+$bp-large: 68.75em;     // 1100px
+$bp-medium: 57.85em;    // 925px
+$bp-medium2: 48.45em;   // 775px
+$bp-medium3: 45em;      // 720px
+$bp-small: 41.25em;     // 660px
+$bp-smaller: 34.7em;    // 555px
+$bp-smaller2: 29.7em;   // 475px
+$bp-smaller3: 25em;     // 400px
+$bp-smaller4: 23.125em; // 370px
+$bp-smaller5: 21.25em;  // 340px
 
 *,
 *::after,
@@ -28,12 +33,20 @@ $bp-smaller3:   25em;       // 400px
 }
 
 html {
-  font-size: 62.5%; // 1rem = 10px
+  font-size: 62.5%;       // 1rem = 10px
   scroll-behavior: smooth;
   box-sizing: border-box;
 
-  @media only screen and (max-width: $bp-large) {
-    font-size: 50%; // 1rem = 8px
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;       // 1rem = 8px,  8/16 = 50%
+  }
+
+    @media only screen and (max-width: $bp-large) {
+    font-size: 56.25%;    // 1rem = 9px, 9/16 = 56.25%
+  }
+
+  @media only screen and (max-height: 4000px) and (min-height: 1100px) {
+    font-size: 75%;       // 1rem = 12px, 12/16 = 75%
   }
 }
 
@@ -50,27 +63,27 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 12px;                                              /* width of the entire scrollbar */
+  width: 12px;                                  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: #003853;                                      /* color of the tracking area */
+  background: #003853;                          /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary-dark);              /* color of the scroll thumb */
-  border-radius: 20px;                                      /* roundness of the scroll thumb */
-  border: 3px solid #003853;                                /* creates padding around scroll thumb */
+  background-color: var(--color-primary-dark);  /* color of the scroll thumb */
+  border-radius: 20px;                          /* roundness of the scroll thumb */
+  border: 3px solid #003853;                    /* creates padding around scroll thumb */
 }
 
 body {
-  -moz-scrollbar-width: thin;                               /* "auto" or "thin" */
-  scrollbar-width: thin;                                    /* "auto" or "thin" */
-  -moz-scrollbar-color: #00affa #003853;                    /* scroll thumb and track */
-  scrollbar-color: #00affa #003853;                         /* scroll thumb and track */
+  -moz-scrollbar-width: thin;                   /* "auto" or "thin" */
+  scrollbar-width: thin;                        /* "auto" or "thin" */
+  -moz-scrollbar-color: #00affa #003853;        /* scroll thumb and track */
+  scrollbar-color: #00affa #003853;             /* scroll thumb and track */
 }
 
-::selection{
+::selection {
   background-color: var(--color-primary-dark);
   color: white;
 }
