@@ -3,6 +3,10 @@
   max-width: 120rem;
   margin: 5rem auto;
   box-shadow: var(--shadow-dark-30);
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0 auto;
+  }
 }
 
 //////////// header
@@ -10,8 +14,18 @@
   display: flex;
   margin-bottom: 10rem;
   padding: 5rem 0 2rem 0;
+  position: relative;
 
   justify-content: space-between;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller2) {
+    padding: 2rem;
+    position: relative;
+  }
 }
 
 //////////// navigation
