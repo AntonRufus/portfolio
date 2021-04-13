@@ -54,7 +54,7 @@
                             </a>
                         </li>
                         <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
-                            <a href="./img/cv.pdf" class="nav-mini__link"
+                            <a href="./file/cv.pdf" class="nav-mini__link"
                                download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">
                                 Resume
                             </a>
@@ -101,7 +101,7 @@
                     <!--Resume
                     <a class="nav__btn-resume-pdf" href="./img/cv.pdf" download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">.pdf</a>
                     <a class="nav__btn-resume-docx" href="./img/cv.docx" download="Frontend web developer 2021 Anton Zhyvotovskyi.docx">.docx</a>-->
-                    <a href="./img/cv.pdf" download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">
+                    <a href="./file/cv.pdf" download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">
                         Resume
                     </a>
                 </button>
@@ -140,14 +140,19 @@
             </button>
 
             <!-- background video -->
-            <div class="bg-video">
+            <!--<div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/video_2k.mp4" type="video/mp4">
-                    <source src="img/video_2k.webm" type="video/webm">
+                    <source src="video/video_2k.mp4" type="video/mp4">
+                    <source src="video/video_2k.webm" type="video/webm">
                     Your browser is not supported!
                 </video>
-            </div>
+            </div>-->
 
+            <div class="bg-video">
+                <div id="particles-js"></div>
+                    <script type="text/javascript" src="js/particles.js"></script>
+                    <script type="text/javascript" src="js/app.js"></script>
+            </div>
         </section>
 
         <!-- about -->
@@ -188,10 +193,10 @@
         <!-- skills -->
         <section class="skills" id="skills">
             <!-- background video -->
-            <div class="bg-video">
+            <div class="skills__bg-video">
                 <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4">
-                    <source src="img/video.webm" type="video/webm">
+                    <source src="video/video.mp4" type="video/mp4">
+                    <source src="video/video.webm" type="video/webm">
                     Your browser is not supported!
                 </video>
             </div>
@@ -245,7 +250,7 @@
                     <!----------------------------------------------------------------------------->
                     <li>
                         <a href="https://redux.js.org" target="_blank"> <img
-                                src="http://blog.js-republic.com/wp-content/uploads/2016/11/logo-redux.png"
+                                src="https://redux.js.org/img/redux.svg"
                                 alt="redux"
                                 width="40" height="40"/>
                             <span>Redux</span>
@@ -319,17 +324,17 @@
                     Soft skills
                 </div>
                 <ul>
-                    <li>&#11162; &nbsp;Teamwork</li>
-                    <li>&#11162; &nbsp;Empathy</li>
-                    <li>&#11162; &nbsp;Communication</li>
-                    <li>&#11162; &nbsp;Patience</li>
-                    <li>&#11162; &nbsp;Open-mindedness</li>
-                    <li>&#11162; &nbsp;Creativity</li>
-                    <li>&#11162; &nbsp;Time management</li>
-                    <li>&#11162; &nbsp;Accountability</li>
-                    <li>&#11162; &nbsp;Approachability</li>
-                    <li>&#11162; &nbsp;Helpfulness</li>
-                    <li>&#11162; &nbsp;Problem solving</li>
+                    <li><span>&#11162; &nbsp;</span>Teamwork</li>
+                    <li><span>&#11162; &nbsp;</span>Empathy</li>
+                    <li><span>&#11162; &nbsp;</span>Communication</li>
+                    <li><span>&#11162; &nbsp;</span>Patience</li>
+                    <li><span>&#11162; &nbsp;</span>Open-mindedness</li>
+                    <li><span>&#11162; &nbsp;</span>Creativity</li>
+                    <li><span>&#11162; &nbsp;</span>Time management</li>
+                    <li><span>&#11162; &nbsp;</span>Accountability</li>
+                    <li><span>&#11162; &nbsp;</span>Approachability</li>
+                    <li><span>&#11162; &nbsp;</span>Helpfulness</li>
+                    <li><span>&#11162; &nbsp;</span>Problem solving</li>
                 </ul>
             </div>
         </section>
@@ -469,8 +474,8 @@
                                             <h3>React</h3>
                                             <li>Auth0-React</li>
                                             <li>Hooks</li>
+                                            <li>Infinite-Scroll-Component</li>
                                             <li>React-Alert</li>
-                                            <li>React-Infinite-Scroll-Component</li>
                                             <li>React-Markdown</li>
                                             <li>React-Router-DOM</li>
                                             <li>Trivia API</li>

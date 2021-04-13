@@ -38,6 +38,7 @@
   padding-bottom: .5rem;
   margin-left: 11%;
   width: 8rem;
+  z-index: 10;
 
   &:hover {
     border-bottom: .3rem solid var(--color-primary);
@@ -355,6 +356,8 @@
   }
 
   &__text {
+    z-index: 10;
+
     &-position {
       color: var(--color-primary);
       transition: all .2s;
@@ -370,6 +373,7 @@
   &__name {
     color: var(--color-primary-dark);
     font-size: 9rem;
+    z-index: 10;
 
     @media only screen and (max-width: $bp-smaller2) {
       font-size: 5rem;
@@ -389,6 +393,7 @@
     padding: 1.5rem 1.5rem;
     transition: all .2s;
     width: 6rem;
+    z-index: 10;
 
     @media (max-height: 250em) and (min-height: $bp-large) {
       margin-top: 35%;
@@ -516,7 +521,28 @@
   position: relative;
   margin-bottom: 5rem;
 
-  @media only screen and (max-width: $bp-smaller2) {
+  &__bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: .3;
+    overflow: hidden;
+
+    &__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
     flex-direction: column;
   }
 
@@ -548,9 +574,10 @@
     margin-left: 11%;
     align-content: flex-start;
 
-    @media only screen and (max-width: $bp-smaller2) {
+    @media only screen and (max-width: $bp-small) {
       align-content: center;
       margin: 0;
+      margin-bottom: 2rem;
     }
   }
 
@@ -558,9 +585,25 @@
     margin-right: 11%;
     align-content: flex-end;
 
-    @media only screen and (max-width: $bp-smaller2) {
+    @media only screen and (max-width: $bp-small) {
+      & span {
+        display: none;
+      }
+
+      & ul {
+        margin-left: 10%;
+
+        & li {
+          list-style: disc;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $bp-small) {
       align-content: center;
       margin: 0;
+    }
+    @media only screen and (max-width: $bp-smaller2) {
     }
 
     ul {
@@ -597,14 +640,19 @@
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -2;
-  opacity: .3;
+  z-index: 1;
+  opacity: .5;
   overflow: hidden;
 
-  &__content {
+  //&__content {
+  //  height: 100%;
+  //  width: 100%;
+  //  object-fit: cover;
+  //}
+
+  #particles-js {
     height: 100%;
     width: 100%;
-    object-fit: cover;
   }
 }
 
@@ -899,7 +947,7 @@
     width: auto;
 
     @media only screen and (max-width: $bp-smaller3) {
-      margin: 0 25%;
+      //margin-top: 0;
     }
   }
 }
