@@ -99,7 +99,8 @@ body {
     text-decoration: underline; }
   @media only screen and (max-width: 68.75em) {
     .logo {
-      margin-left: 5rem; } }
+      margin-left: 5rem;
+      z-index: inherit; } }
   @media only screen and (max-width: 29.7em) {
     .logo {
       margin-left: 0; } }
@@ -318,6 +319,9 @@ body {
         background-image: none; } }
   .introduction__text {
     z-index: 10; }
+    @media only screen and (max-width: 75em) {
+      .introduction__text {
+        z-index: inherit; } }
     .introduction__text-position {
       color: var(--color-primary);
       transition: all .2s;
@@ -329,6 +333,9 @@ body {
     color: var(--color-primary-dark);
     font-size: 9rem;
     z-index: 10; }
+    @media only screen and (max-width: 75em) {
+      .introduction__name {
+        z-index: inherit; } }
     @media only screen and (max-width: 29.7em) {
       .introduction__name {
         font-size: 5rem; } }
@@ -351,6 +358,9 @@ body {
       box-shadow: 0 .5rem .5rem var(--color-primary-dark);
       color: var(--color-primary);
     }*/ }
+    @media only screen and (max-width: 75em) {
+      .introduction__arrow {
+        z-index: inherit; } }
     @media (max-height: 250em) and (min-height: 68.75em) {
       .introduction__arrow {
         margin-top: 35%; } }
@@ -782,7 +792,8 @@ body {
   justify-content: space-between; }
   @media only screen and (max-width: 68.75em) {
     .header {
-      padding: 1rem; } }
+      padding: 1rem;
+      z-index: inherit; } }
   @media only screen and (max-width: 29.7em) {
     .header {
       padding: 2rem;

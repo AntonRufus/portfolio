@@ -48,6 +48,7 @@
 
   @media only screen and (max-width: $bp-large) {
     margin-left: 5rem;
+    z-index: inherit;
   }
   @media only screen and (max-width: $bp-smaller2) {
     margin-left: 0;
@@ -358,6 +359,10 @@
   &__text {
     z-index: 10;
 
+    @media only screen and (max-width: $bp-largest) {
+      z-index: inherit;
+    }
+
     &-position {
       color: var(--color-primary);
       transition: all .2s;
@@ -374,6 +379,10 @@
     color: var(--color-primary-dark);
     font-size: 9rem;
     z-index: 10;
+
+    @media only screen and (max-width: $bp-largest) {
+      z-index: inherit;
+    }
 
     @media only screen and (max-width: $bp-smaller2) {
       font-size: 5rem;
@@ -394,6 +403,10 @@
     transition: all .2s;
     width: 6rem;
     z-index: 10;
+
+    @media only screen and (max-width: $bp-largest) {
+      z-index: inherit;
+    }
 
     @media (max-height: 250em) and (min-height: $bp-large) {
       margin-top: 35%;
