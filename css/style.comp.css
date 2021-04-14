@@ -505,6 +505,7 @@ body {
             list-style: disc; } }
     @media only screen and (max-width: 41.25em) {
       .skills__soft {
+        width: 100%;
         align-content: center;
         margin: 0; } }
     .skills__soft ul {
