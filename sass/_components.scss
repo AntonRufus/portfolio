@@ -889,7 +889,7 @@
   transition: all .4s .2s;
 
   @supports ((-webkit-backdrop-filter: blur(10px) hue-rotate(25deg)) or (backdrop-filter: blur(10px) hue-rotate(25deg))) {
-    background-color: rgba(black, .3);
+    background-color: rgba(black, .8);
     -webkit-backdrop-filter: blur(10px) hue-rotate(25deg);
     backdrop-filter: blur(10px) hue-rotate(25deg);
   }
