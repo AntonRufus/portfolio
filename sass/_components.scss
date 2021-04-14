@@ -550,7 +550,7 @@
       object-fit: cover;
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-largest) {
       display: none;
     }
   }
@@ -598,7 +598,8 @@
     margin-right: 11%;
     align-content: flex-end;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-largest) {
+      width: 30%;
       & span {
         display: none;
       }

@@ -461,7 +461,7 @@ body {
       height: 100%;
       width: 100%;
       object-fit: cover; }
-    @media only screen and (max-width: 41.25em) {
+    @media only screen and (max-width: 75em) {
       .skills__bg-video {
         display: none; } }
   @media only screen and (max-width: 41.25em) {
@@ -494,13 +494,15 @@ body {
   .skills__soft {
     margin-right: 11%;
     align-content: flex-end; }
-    @media only screen and (max-width: 41.25em) {
-      .skills__soft span {
-        display: none; }
-      .skills__soft ul {
-        margin-left: 10%; }
-        .skills__soft ul li {
-          list-style: disc; } }
+    @media only screen and (max-width: 75em) {
+      .skills__soft {
+        width: 30%; }
+        .skills__soft span {
+          display: none; }
+        .skills__soft ul {
+          margin-left: 10%; }
+          .skills__soft ul li {
+            list-style: disc; } }
     @media only screen and (max-width: 41.25em) {
       .skills__soft {
         align-content: center;
