@@ -1,146 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <title>Portfolio | Front-end web developer</title>
-</head>
-<body>
-<div class="container">
-
-    <!-- header part -->
-    <header class="header">
-
+  </head>
+  <body>
+    <div class="container">
+      <!-- header part -->
+      <header class="header">
         <!-- logo -->
-        <img src="img/logo.png" alt="logo" class="logo" id="home">
+        <img src="img/logo.png" alt="logo" class="logo" id="home" />
 
         <!-- nab bar -->
         <nav class="nav">
+          <!-- mini nav -->
+          <div class="nav-mini">
+            <input
+              type="checkbox"
+              class="nav-mini__checkbox"
+              id="nav-mini-toggle"
+            />
+            <div class="nav-mini__background">&nbsp;</div>
 
-            <!-- mini nav -->
-            <div class="nav-mini">
-                <input type="checkbox" class="nav-mini__checkbox" id="nav-mini-toggle">
-                <div class="nav-mini__background">&nbsp;</div>
+            <label for="nav-mini-toggle" class="nav-mini__button">
+              <span class="nav-mini__icon"></span>
+            </label>
 
-                <label for="nav-mini-toggle" class="nav-mini__button">
-                    <span class="nav-mini__icon"></span>
-                </label>
-
-                <div class="nav-mini__nav">
-                    <ul class="nav-mini__list">
-                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
-                            <a href="#" class="nav-mini__link">
-                                Home
-                            </a>
-                        </li>
-                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
-                            <a href="#about" class="nav-mini__link">
-                                About
-                            </a>
-                        </li>
-                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
-                            <a href="#skills" class="nav-mini__link">
-                                Skills
-                            </a>
-                        </li>
-                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
-                            <a href="#projects" class="nav-mini__link">
-                                Projects
-                            </a>
-                        </li>
-                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
-                            <a href="./file/cv.pdf" class="nav-mini__link"
-                               download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">
-                                Resume
-                            </a>
-                        </li>
-                        <li onclick="getElementById('nav-mini-toggle').checked=false" class="nav-mini__item">
-                            <a href="#contacts" class="nav-mini__link">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="nav-mini__nav">
+              <ul class="nav-mini__list">
+                <li
+                  onclick="getElementById('nav-mini-toggle').checked=false"
+                  class="nav-mini__item"
+                >
+                  <a href="#" class="nav-mini__link"> Home </a>
+                </li>
+                <li
+                  onclick="getElementById('nav-mini-toggle').checked=false"
+                  class="nav-mini__item"
+                >
+                  <a href="#about" class="nav-mini__link"> About </a>
+                </li>
+                <li
+                  onclick="getElementById('nav-mini-toggle').checked=false"
+                  class="nav-mini__item"
+                >
+                  <a href="#skills" class="nav-mini__link"> Skills </a>
+                </li>
+                <li
+                  onclick="getElementById('nav-mini-toggle').checked=false"
+                  class="nav-mini__item"
+                >
+                  <a href="#projects" class="nav-mini__link"> Projects </a>
+                </li>
+                <li
+                  onclick="getElementById('nav-mini-toggle').checked=false"
+                  class="nav-mini__item"
+                >
+                  <a
+                    href="./file/cv.pdf"
+                    class="nav-mini__link"
+                    download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf"
+                  >
+                    Resume
+                  </a>
+                </li>
+                <li
+                  onclick="getElementById('nav-mini-toggle').checked=false"
+                  class="nav-mini__item"
+                >
+                  <a href="#contacts" class="nav-mini__link"> Contacts </a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <!-- nav item -->
-            <div class="nav__item">
-                <button class="nav__btn">
-                    <a href="#about">
-                        About
-                    </a>
-                </button>
-            </div>
+          <!-- nav item -->
+          <div class="nav__item">
+            <button class="nav__btn">
+              <a href="#about"> About </a>
+            </button>
+          </div>
 
-            <!-- nav item -->
-            <div class="nav__item">
-                <button class="nav__btn">
-                    <a href="#skills">
-                        Skills
-                    </a>
-                </button>
-            </div>
+          <!-- nav item -->
+          <div class="nav__item">
+            <button class="nav__btn">
+              <a href="#skills"> Skills </a>
+            </button>
+          </div>
 
-            <!-- nav item -->
-            <div class="nav__item">
-                <button class="nav__btn">
-                    <a href="#projects">
-                        Projects
-                    </a>
-                </button>
-            </div>
+          <!-- nav item -->
+          <div class="nav__item">
+            <button class="nav__btn">
+              <a href="#projects"> Projects </a>
+            </button>
+          </div>
 
-            <!-- nav item -->
-            <div class="nav__item">
-                <button class="nav__btn">
-                    <!--Resume
+          <!-- nav item -->
+          <div class="nav__item">
+            <button class="nav__btn">
+              <!--Resume
                     <a class="nav__btn-resume-pdf" href="./img/cv.pdf" download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">.pdf</a>
                     <a class="nav__btn-resume-docx" href="./img/cv.docx" download="Frontend web developer 2021 Anton Zhyvotovskyi.docx">.docx</a>-->
-                    <a href="./file/cv.pdf" download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf">
-                        Resume
-                    </a>
-                </button>
-            </div>
+              <a
+                href="./file/cv.pdf"
+                download="Frontend web developer 2021 Anton Zhyvotovskyi.pdf"
+              >
+                Resume
+              </a>
+            </button>
+          </div>
 
-            <!-- nav item -->
-            <div class="nav__item">
-                <button class="nav__btn">
-                    <a href="#contacts">
-                        Contacts
-                    </a>
-                </button>
-            </div>
+          <!-- nav item -->
+          <div class="nav__item">
+            <button class="nav__btn">
+              <a href="#contacts"> Contacts </a>
+            </button>
+          </div>
         </nav>
-    </header>
+      </header>
 
-    <!-- content part -->
-    <div class="content">
-
+      <!-- content part -->
+      <div class="content">
         <!-- introduction -->
         <section class="introduction">
-            <div class="introduction__text">Hi there</div>
-            <div class="introduction__name">I'm Anton</div>
-            <div class="introduction__text">
-                I am a
-                <span class="introduction__text-position">
-                    web developer
-                </span>
-            </div>
+          <div class="introduction__text">Hi there</div>
+          <div class="introduction__name">I'm Anton</div>
+          <div class="introduction__text">
+            I am a
+            <span class="introduction__text-position"> web developer </span>
+          </div>
 
-            <button class="introduction__arrow">
-                <a href="#about">
-                    ▽
-                </a>
-                <!--&#9661;-->
-            </button>
+          <button class="introduction__arrow">
+            <a href="#about"> ▽ </a>
+            <!--&#9661;-->
+          </button>
 
-            <!-- background video -->
-            <!--<div class="bg-video">
+          <!-- background video -->
+          <!--<div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="video/video_2k.mp4" type="video/mp4">
                     <source src="video/video_2k.webm" type="video/webm">
@@ -148,784 +153,911 @@
                 </video>
             </div>-->
 
-            <div class="bg-video">
-                <div id="particles-js"></div>
-                    <script type="text/javascript" src="js/particles.js"></script>
-                    <script type="text/javascript" src="js/app.js"></script>
-            </div>
+          <div class="bg-video">
+            <div id="particles-js"></div>
+            <script type="text/javascript" src="js/particles.js"></script>
+            <script type="text/javascript" src="js/app.js"></script>
+          </div>
         </section>
 
         <!-- about -->
         <section class="about" id="about">
+          <!-- header -->
+          <div class="sub-header">About me</div>
 
-            <!-- header -->
-            <div class="sub-header">
-                About me
-            </div>
+          <!-- paragraph 1 -->
+          <p class="about__text">
+            <span>
+              I'm a self-taught web developer and have about one year of
+              experience in front-end.
+            </span>
+            <span>
+              The main technologies that I primarily use during the development
+              of my projects are React, Redux, JavaScript, HTML and CSS (SASS).
+            </span>
+          </p>
 
-            <!-- paragraph 1 -->
-            <p class="about__text">
-                <span>
-                    I'm a self-taught web developer and have about one year of experience in front-end.
-                </span>
-                <span>
-                    The main technologies that I primarily use during the development of my projects are React, Redux, JavaScript, HTML and CSS (SASS).
-                </span>
-            </p>
-
-            <!-- paragraph 2 -->
-            <p class="about__text">
-                <span>
-                    On a personal level, I’m result oriented, ready to learn and hardworking person, willing to take
-                responsibility for the projects I work on.
-                </span>
-                <span>
-                    I’m also able to quickly adapt to the environment and establish social interactions.
-                </span>
-            </p>
+          <!-- paragraph 2 -->
+          <p class="about__text">
+            <span>
+              On a personal level, I’m result oriented, ready to learn and
+              hardworking person, willing to take responsibility for the
+              projects I work on.
+            </span>
+            <span>
+              I’m also able to quickly adapt to the environment and establish
+              social interactions.
+            </span>
+          </p>
         </section>
 
         <!-- banner - hello world -->
-        <section class="banner">
-            &nbsp;
-        </section>
+        <section class="banner">&nbsp;</section>
 
         <!-- skills -->
         <section class="skills" id="skills">
-            <!-- background video -->
-            <div class="skills__bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                    <source src="video/video.mp4" type="video/mp4">
-                    <source src="video/video.webm" type="video/webm">
-                    Your browser is not supported!
-                </video>
-            </div>
+          <!-- background video -->
+          <div class="skills__bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+              <source src="video/video.mp4" type="video/mp4" />
+              <source src="video/video.webm" type="video/webm" />
+              Your browser is not supported!
+            </video>
+          </div>
 
-            <!-- tech skills -->
-            <div class="skills__tech">
-                <div class="sub-header">
-                    Hard skills
-                </div>
-                <ul>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"> <img
-                                src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_html5-512.png"
-                                alt="html5" width="40" height="40"/>
-                            <span>HTML</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> <img
-                                src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_css3-512.png"
-                                alt="css3" width="40" height="40"/>
-                            <span>Flexbox, Grid</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://sass-lang.com" target="_blank"> <img
-                                src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/288_Sass-512.png"
-                                alt="sass" width="40" height="40"/>
-                            <span>SASS (SCSS)</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img
-                                src="https://cdn0.iconfinder.com/data/icons/programming-vintage-circle/32/programming_js_icon-512.png"
-                                alt="javascript" width="40" height="40"/>
-                            <span>JavaScript</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://reactjs.org/" target="_blank"> <img
-                                src="https://image.flaticon.com/icons/png/512/919/919851.png" alt="react" width="40"
-                                height="40"/>
-                            <span>React</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://redux.js.org" target="_blank"> <img
-                                src="https://redux.js.org/img/redux.svg"
-                                alt="redux"
-                                width="40" height="40"/>
-                            <span>Redux</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <!--<li>
+          <!-- tech skills -->
+          <div class="skills__tech">
+            <div class="sub-header">Hard skills</div>
+            <ul>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a
+                  href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                  target="_blank"
+                >
+                  <img
+                    src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_html5-512.png"
+                    alt="html5"
+                    width="40"
+                    height="40"
+                  />
+                  <span>HTML</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                >
+                  <img
+                    src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_css3-512.png"
+                    alt="css3"
+                    width="40"
+                    height="40"
+                  />
+                  <span>Flexbox, Grid</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://sass-lang.com" target="_blank">
+                  <img
+                    src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/288_Sass-512.png"
+                    alt="sass"
+                    width="40"
+                    height="40"
+                  />
+                  <span>SASS (SCSS)</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                >
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/programming-vintage-circle/32/programming_js_icon-512.png"
+                    alt="javascript"
+                    width="40"
+                    height="40"
+                  />
+                  <span>JavaScript</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://reactjs.org/" target="_blank">
+                  <img
+                    src="https://image.flaticon.com/icons/png/512/919/919851.png"
+                    alt="react"
+                    width="40"
+                    height="40"
+                  />
+                  <span>React</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://redux.js.org" target="_blank">
+                  <img
+                    src="https://redux.js.org/img/redux.svg"
+                    alt="redux"
+                    width="40"
+                    height="40"
+                  />
+                  <span>Redux</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <!--<li>
                         <a href="https://www.typescriptlang.org/" target="_blank">
                             <img src="https://image.flaticon.com/icons/png/512/919/919832.png" alt="typescript"
                                  width="40" height="40"/>
                             <span>Typescript</span>
                         </a>
                     </li>-->
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://nodejs.org" target="_blank"> <img
-                                src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/node-512.png"
-                                alt="nodejs" width="40" height="40"/>
-                            <span>Nodejs</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://www.npmjs.com/" target="_blank">
-                            <img src="https://www.vectorlogo.zone/logos/npmjs/npmjs-tile.svg" alt="npmjs" width="40"
-                                 height="40"/>
-                            <span>NPM</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <!--<li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://nodejs.org" target="_blank">
+                  <img
+                    src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/node-512.png"
+                    alt="nodejs"
+                    width="40"
+                    height="40"
+                  />
+                  <span>Nodejs</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://www.npmjs.com/" target="_blank">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/npmjs/npmjs-tile.svg"
+                    alt="npmjs"
+                    width="40"
+                    height="40"
+                  />
+                  <span>NPM</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <!--<li>
                         <a href="https://yarnpkg.com/" target="_blank">
                             <img src="https://www.vectorlogo.zone/logos/yarnpkg/yarnpkg-icon.svg" alt="yarn" width="40"
                                    height="40"/>
                             <span>Yarn</span>
                         </a>
                     </li>-->
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://jestjs.io" target="_blank"> <img
-                                src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest"
-                                width="40"
-                                height="40"/>
-                            <span>Jest</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://git-scm.com/" target="_blank"> <img
-                                src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"
-                                width="40"
-                                height="40"/>
-                            <span>Git</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                    <li>
-                        <a href="https://www.photoshop.com/en" target="_blank"> <img
-                                src="https://cdn1.iconfinder.com/data/icons/flurry-for-creative-suite/512/photoshop2.png"
-                                alt="photoshop" width="40" height="40"/>
-                            <span>Photoshop</span>
-                        </a>
-                    </li>
-                    <!----------------------------------------------------------------------------->
-                </ul>
-            </div>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://jestjs.io" target="_blank">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
+                    alt="jest"
+                    width="40"
+                    height="40"
+                  />
+                  <span>Jest</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://git-scm.com/" target="_blank">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
+                    alt="git"
+                    width="40"
+                    height="40"
+                  />
+                  <span>Git</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+              <li>
+                <a href="https://www.photoshop.com/en" target="_blank">
+                  <img
+                    src="https://cdn1.iconfinder.com/data/icons/flurry-for-creative-suite/512/photoshop2.png"
+                    alt="photoshop"
+                    width="40"
+                    height="40"
+                  />
+                  <span>Photoshop</span>
+                </a>
+              </li>
+              <!----------------------------------------------------------------------------->
+            </ul>
+          </div>
 
-            <!-- soft skills -->
-            <div class="skills__soft">
-                <div class="sub-header">
-                    Soft skills
-                </div>
-                <ul>
-                    <li><span>&#11162; &nbsp;</span>Teamwork</li>
-                    <li><span>&#11162; &nbsp;</span>Empathy</li>
-                    <li><span>&#11162; &nbsp;</span>Communication</li>
-                    <li><span>&#11162; &nbsp;</span>Patience</li>
-                    <li><span>&#11162; &nbsp;</span>Open-mindedness</li>
-                    <li><span>&#11162; &nbsp;</span>Creativity</li>
-                    <li><span>&#11162; &nbsp;</span>Time management</li>
-                    <li><span>&#11162; &nbsp;</span>Accountability</li>
-                    <li><span>&#11162; &nbsp;</span>Approachability</li>
-                    <li><span>&#11162; &nbsp;</span>Helpfulness</li>
-                    <li><span>&#11162; &nbsp;</span>Problem solving</li>
-                </ul>
-            </div>
+          <!-- soft skills -->
+          <div class="skills__soft">
+            <div class="sub-header">Soft skills</div>
+            <ul>
+              <li><span>&#11162; &nbsp;</span>Teamwork</li>
+              <li><span>&#11162; &nbsp;</span>Empathy</li>
+              <li><span>&#11162; &nbsp;</span>Communication</li>
+              <li><span>&#11162; &nbsp;</span>Patience</li>
+              <li><span>&#11162; &nbsp;</span>Open-mindedness</li>
+              <li><span>&#11162; &nbsp;</span>Creativity</li>
+              <li><span>&#11162; &nbsp;</span>Time management</li>
+              <li><span>&#11162; &nbsp;</span>Accountability</li>
+              <li><span>&#11162; &nbsp;</span>Approachability</li>
+              <li><span>&#11162; &nbsp;</span>Helpfulness</li>
+              <li><span>&#11162; &nbsp;</span>Problem solving</li>
+            </ul>
+          </div>
         </section>
 
         <!-- projects -->
         <section class="projects" id="projects">
+          <!-- header -->
+          <div class="sub-header">My projects</div>
 
-            <!-- header -->
-            <div class="sub-header">
-                My projects
-            </div>
+          <!-- project #1 -->
+          <div class="project" id="project-1">
+            <!-- project's header -->
+            <h2 class="project__header">01 / Social network</h2>
 
-            <!-- project #1 -->
-            <div class="project" id="project-1">
+            <!-- project's body -->
+            <div class="project__body">
+              <!-- project's description -->
+              <div class="project__description">
+                A large project to develop a social network from scratch based
+                on React and Redux.
+                <span class="project__description-span"
+                  >Please text me to get login and password.</span
+                >
 
-                <!-- project's header -->
-                <h2 class="project__header">01 / Social network</h2>
+                <!-- project #1 tech stack popup -->
+                <div class="popup" id="popup-1">
+                  <div class="popup__content">
+                    <!-- tech list -->
+                    <ul>
+                      <!-- list header -->
+                      <h2 class="project__header">Social network</h2>
 
-                <!-- project's body -->
-                <div class="project__body">
+                      <!-- React -->
+                      <li>
+                        <ul>
+                          <h3>React</h3>
+                          <li>HOC</li>
+                          <li>Hooks</li>
+                          <li>Jest</li>
+                          <li>React-Router-DOM</li>
+                          <li>React-Redux</li>
+                          <li>React.lazy</li>
+                          <li>React.memo</li>
+                        </ul>
+                      </li>
+                      <!-- Redux -->
+                      <li>
+                        <ul>
+                          <h3>Redux</h3>
+                          <li>Redux-ducks</li>
+                          <li>Redux-form</li>
+                          <li>Redux-thunk</li>
+                          <li>Reselect</li>
+                          <li>Selectors</li>
+                        </ul>
+                      </li>
+                      <!-- REST API -->
+                      <li>
+                        <ul>
+                          <h3>REST API</h3>
+                          <li>Axios</li>
+                        </ul>
+                      </li>
+                      <!-- CSS -->
+                      <li>
+                        <ul>
+                          <h3>CSS</h3>
+                          <li>CSS modules</li>
+                          <li>Grid</li>
+                        </ul>
+                      </li>
+                    </ul>
 
-                    <!-- project's description -->
-                    <div class="project__description">
-                        A large project to develop a social network from scratch based on React and Redux.
-                        <span class="project__description-span">Please text me to get login and password.</span>
-
-                        <!-- project #1 tech stack popup -->
-                        <div class="popup" id="popup-1">
-                            <div class="popup__content">
-
-                                <!-- tech list -->
-                                <ul>
-
-                                    <!-- list header -->
-                                    <h2 class="project__header">Social network</h2>
-
-                                    <!-- React -->
-                                    <li>
-                                        <ul>
-                                            <h3>React</h3>
-                                            <li>HOC</li>
-                                            <li>Hooks</li>
-                                            <li>Jest</li>
-                                            <li>React-Router-DOM</li>
-                                            <li>React-Redux</li>
-                                            <li>React.lazy</li>
-                                            <li>React.memo</li>
-                                        </ul>
-                                    </li>
-                                    <!-- Redux -->
-                                    <li>
-                                        <ul>
-                                            <h3>Redux</h3>
-                                            <li>Redux-ducks</li>
-                                            <li>Redux-form</li>
-                                            <li>Redux-thunk</li>
-                                            <li>Reselect</li>
-                                            <li>Selectors</li>
-                                        </ul>
-                                    </li>
-                                    <!-- REST API -->
-                                    <li>
-                                        <ul>
-                                            <h3>REST API</h3>
-                                            <li>Axios</li>
-                                        </ul>
-                                    </li>
-                                    <!-- CSS -->
-                                    <li>
-                                        <ul>
-                                            <h3>CSS</h3>
-                                            <li>CSS modules</li>
-                                            <li>Grid</li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-
-                                <!-- button -->
-                                <a href="#project-1" class="btn popup__btn">Close</a>
-                            </div>
-                        </div>
-
-                        <!-- project's navigation -->
-                        <div class="project__nav">
-                            <a href="#popup-1" class="btn">
-                                Tech stack
-                            </a>
-
-                            <a href="https://antonrufus.github.io/social-network/"
-                               target="_blank"
-                               class="btn">
-                                Demo
-                            </a>
-
-                            <a href="https://github.com/AntonRufus/social-network/"
-                               target="_blank"
-                               class="btn">
-                                Code source
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- project's image -->
-                    <div class="project__image">
-                        <img src="./img/social.jpg" alt="Social network">
-                    </div>
+                    <!-- button -->
+                    <a href="#project-1" class="btn popup__btn">Close</a>
+                  </div>
                 </div>
-            </div>
 
-            <!-- project #2 -->
-            <div class="project" id="project-2">
+                <!-- project's navigation -->
+                <div class="project__nav">
+                  <a href="#popup-1" class="btn"> Tech stack </a>
 
-                <!-- project's header -->
-                <h2 class="project__header">02 / Multi-apps project</h2>
+                  <a
+                    href="https://antonrufus.github.io/social-network/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Demo
+                  </a>
 
-                <!-- project's body -->
-                <div class="project__body">
-
-                    <!-- project's description -->
-                    <div class="project__description">
-                        The main purpose of the app to combine small React applications into one big project.
-
-                        <!-- project #2 tech stack popup -->
-                        <div class="popup" id="popup-2">
-                            <div class="popup__content">
-
-                                <!-- tech list -->
-                                <ul>
-
-                                    <!-- list header -->
-                                    <h2 class="project__header">Multi-apps project</h2>
-
-                                    <!-- React -->
-                                    <li>
-                                        <ul>
-                                            <h3>React</h3>
-                                            <li>Auth0-React</li>
-                                            <li>Hooks</li>
-                                            <li>Infinite-Scroll-Component</li>
-                                            <li>React-Alert</li>
-                                            <li>React-Markdown</li>
-                                            <li>React-Router-DOM</li>
-                                            <li>Trivia API</li>
-                                            <li>Unsplash API</li>
-                                        </ul>
-                                    </li>
-                                    <!-- JavaScript -->
-                                    <li>
-                                        <ul>
-                                            <h3>JavaScript</h3>
-                                            <li>Async / await</li>
-                                            <li>Lodash.shuffle</li>
-                                            <li>Promise</li>
-                                        </ul>
-                                    </li>
-                                    <!-- REST API -->
-                                    <li>
-                                        <ul>
-                                            <h3>REST API</h3>
-                                            <li>Fetch</li>
-                                        </ul>
-                                    </li>
-                                    <!-- HTML -->
-                                    <li>
-                                        <ul>
-                                            <h3>HTML</h3>
-                                            <li>Canvas</li>
-                                        </ul>
-                                    </li>
-                                    <!-- CSS -->
-                                    <li>
-                                        <ul>
-                                            <h3>CSS</h3>
-                                            <li>CSS modules</li>
-                                            <li>Emotion</li>
-                                            <li>Grid</li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-
-                                <!-- button -->
-                                <a href="#project-2" class="btn popup__btn">Close</a>
-                            </div>
-                        </div>
-
-                        <!-- project's navigation -->
-                        <div class="project__nav">
-                            <a href="#popup-2" class="btn">
-                                Tech stack
-                            </a>
-
-                            <a href="https://antonrufus.github.io/multi-apps-project/"
-                               target="_blank"
-                               class="btn">
-                                Demo
-                            </a>
-
-                            <a href="https://github.com/AntonRufus/multi-apps-project/"
-                               target="_blank"
-                               class="btn">
-                                Code source
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- project's image -->
-                    <div class="project__image">
-                        <img src="./img/multi.jpg" alt="Multi-apps project">
-                    </div>
+                  <a
+                    href="https://github.com/AntonRufus/social-network/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Code source
+                  </a>
                 </div>
+              </div>
+
+              <!-- project's image -->
+              <div class="project__image">
+                <img src="./img/social.jpg" alt="Social network" />
+              </div>
             </div>
+          </div>
 
-            <!-- project #3 -->
-            <div class="project" id="project-3">
+          <!-- project #2 -->
+          <div class="project" id="project-2">
+            <!-- project's header -->
+            <h2 class="project__header">02 / Multi-apps project</h2>
 
-                <!-- project's header -->
-                <h2 class="project__header">03 / Nature tours</h2>
+            <!-- project's body -->
+            <div class="project__body">
+              <!-- project's description -->
+              <div class="project__description">
+                The main purpose of the app to combine small React applications
+                into one big project.
 
-                <!-- project's body -->
-                <div class="project__body">
+                <!-- project #2 tech stack popup -->
+                <div class="popup" id="popup-2">
+                  <div class="popup__content">
+                    <!-- tech list -->
+                    <ul>
+                      <!-- list header -->
+                      <h2 class="project__header">Multi-apps project</h2>
 
-                    <!-- project's description -->
-                    <div class="project__description">
-                        A landing page that includes modern CSS, animations and SASS.
+                      <!-- React -->
+                      <li>
+                        <ul>
+                          <h3>React</h3>
+                          <li>Auth0-React</li>
+                          <li>Hooks</li>
+                          <li>Infinite-Scroll-Component</li>
+                          <li>React-Alert</li>
+                          <li>React-Markdown</li>
+                          <li>React-Router-DOM</li>
+                          <li>Trivia API</li>
+                          <li>Unsplash API</li>
+                        </ul>
+                      </li>
+                      <!-- JavaScript -->
+                      <li>
+                        <ul>
+                          <h3>JavaScript</h3>
+                          <li>Async / await</li>
+                          <li>Lodash.shuffle</li>
+                          <li>Promise</li>
+                        </ul>
+                      </li>
+                      <!-- REST API -->
+                      <li>
+                        <ul>
+                          <h3>REST API</h3>
+                          <li>Fetch</li>
+                        </ul>
+                      </li>
+                      <!-- HTML -->
+                      <li>
+                        <ul>
+                          <h3>HTML</h3>
+                          <li>Canvas</li>
+                        </ul>
+                      </li>
+                      <!-- CSS -->
+                      <li>
+                        <ul>
+                          <h3>CSS</h3>
+                          <li>CSS modules</li>
+                          <li>Emotion</li>
+                          <li>Grid</li>
+                        </ul>
+                      </li>
+                    </ul>
 
-                        <!-- project #3 tech stack popup -->
-                        <div class="popup" id="popup-3">
-                            <div class="popup__content">
-
-                                <!-- tech list -->
-                                <ul>
-
-                                    <!-- list header -->
-                                    <h2 class="project__header">Nature tours</h2>
-
-                                    <!-- HTML -->
-                                    <li>
-                                        <ul>
-                                            <h3>HTML</h3>
-                                        </ul>
-                                    </li>
-
-                                    <!-- CSS -->
-                                    <li>
-                                        <ul>
-                                            <h3>CSS</h3>
-                                            <li>Animation</li>
-                                            <li>BEM</li>
-                                            <li>Custom Grid Layout</li>
-                                            <li>PostCSS</li>
-                                            <li>SASS</li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- JavaScript -->
-                                    <li>
-                                        <ul>
-                                            <h3>JavaScript</h3>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <!-- button -->
-                                <a href="#project-3" class="btn popup__btn">Close</a>
-                            </div>
-                        </div>
-
-                        <!-- project's navigation -->
-                        <div class="project__nav">
-                            <a href="#popup-3" class="btn">
-                                Tech stack
-                            </a>
-
-                            <a href="https://antonrufus.github.io/nature_tours/"
-                               target="_blank"
-                               class="btn">
-                                Demo
-                            </a>
-
-                            <a href="https://github.com/AntonRufus/nature_tours/"
-                               target="_blank"
-                               class="btn">
-                                Code source
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- project's image -->
-                    <div class="project__image">
-                        <img src="./img/nature.jpg" alt="Nature tours">
-                    </div>
+                    <!-- button -->
+                    <a href="#project-2" class="btn popup__btn">Close</a>
+                  </div>
                 </div>
-            </div>
 
-            <!-- project #4 -->
-            <div class="project" id="project-4">
+                <!-- project's navigation -->
+                <div class="project__nav">
+                  <a href="#popup-2" class="btn"> Tech stack </a>
 
-                <!-- project's header -->
-                <h2 class="project__header">04 / Trillo</h2>
+                  <a
+                    href="https://antonrufus.github.io/multi-apps-project/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Demo
+                  </a>
 
-                <!-- project's body -->
-                <div class="project__body">
-
-                    <!-- project's description -->
-                    <div class="project__description">
-                        In this project the focus is on flexbox and responsive layout.
-
-                        <!-- project #4 tech stack popup -->
-                        <div class="popup" id="popup-4">
-                            <div class="popup__content">
-
-                                <!-- tech list -->
-                                <ul>
-
-                                    <!-- list header -->
-                                    <h2 class="project__header">Trillo</h2>
-
-                                    <!-- HTML -->
-                                    <li>
-                                        <ul>
-                                            <h3>HTML</h3>
-                                        </ul>
-                                    </li>
-                                    <!-- CSS -->
-                                    <li>
-                                        <ul>
-                                            <h3>CSS</h3>
-                                            <li>Flexbox</li>
-                                            <li>PostCSS</li>
-                                            <li>SASS</li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-
-                                <!-- button -->
-                                <a href="#project-4" class="btn popup__btn">Close</a>
-                            </div>
-                        </div>
-
-                        <!-- project's navigation -->
-                        <div class="project__nav">
-                            <a href="#popup-4" class="btn">
-                                Tech stack
-                            </a>
-
-                            <a href="https://antonrufus.github.io/trillo/"
-                               target="_blank"
-                               class="btn">
-                                Demo
-                            </a>
-
-                            <a href="https://github.com/AntonRufus/trillo/"
-                               target="_blank"
-                               class="btn">
-                                Code source
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- project's image -->
-                    <div class="project__image">
-                        <img src="./img/trillo.jpg" alt="Trillo">
-                    </div>
+                  <a
+                    href="https://github.com/AntonRufus/multi-apps-project/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Code source
+                  </a>
                 </div>
+              </div>
+
+              <!-- project's image -->
+              <div class="project__image">
+                <img src="./img/multi.jpg" alt="Multi-apps project" />
+              </div>
             </div>
+          </div>
+          <!-- --------------------------------------------------------------------------------------------------- -->
+          <!-- project #7 -->
+          <div class="project" id="project-7">
+            <!-- project's header -->
+            <h2 class="project__header">03 / JavaScript project</h2>
 
-            <!-- project #5 -->
-            <div class="project" id="project-5">
+            <!-- project's body -->
+            <div class="project__body">
+              <!-- project's description -->
+              <div class="project__description">
+                Bunch of modern JavaScript apps collected in one project.
 
-                <!-- project's header -->
-                <h2 class="project__header">05 / Nexter</h2>
+                <!-- project #7 tech stack popup -->
+                <div class="popup" id="popup-7">
+                  <div class="popup__content">
+                    <!-- tech list -->
+                    <ul>
+                      <!-- list header -->
+                      <h2 class="project__header">JavaScript project</h2>
 
-                <!-- project's body -->
-                <div class="project__body">
+                      <!-- HTML -->
+                      <li>
+                        <ul>
+                          <h3>HTML</h3>
+                        </ul>
+                      </li>
+                      <!-- CSS -->
+                      <li>
+                        <ul>
+                          <h3>CSS</h3>
+                          <li>Flexbox</li>
+                        </ul>
+                      </li>
+                      <!-- JavaScript -->
+                      <li>
+                        <ul>
+                          <h3>JavaScript</h3>
+                          <li>GSAP</li>
+                          <li>Scroll Magic</li>
+                          <li>Barba</li>
+                          <li>Chroma</li>
+                        </ul>
+                      </li>
+                    </ul>
 
-                    <!-- project's description -->
-                    <div class="project__description">
-                        Modern website with responsive design for real estate business made on the basis of Grid Layout.
-
-                        <!-- project #5 tech stack popup -->
-                        <div class="popup" id="popup-5">
-                            <div class="popup__content">
-
-                                <!-- tech list -->
-                                <ul>
-
-                                    <!-- list header -->
-                                    <h2 class="project__header">Nexter</h2>
-
-                                    <!-- HTML -->
-                                    <li>
-                                        <ul>
-                                            <h3>HTML</h3>
-                                        </ul>
-                                    </li>
-                                    <!-- CSS -->
-                                    <li>
-                                        <ul>
-                                            <h3>CSS</h3>
-                                            <li>Grid</li>
-                                            <li>PostCSS</li>
-                                            <li>SASS</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <!-- button -->
-                                <a href="#project-5" class="btn popup__btn">Close</a>
-                            </div>
-                        </div>
-
-                        <!-- project's navigation -->
-                        <div class="project__nav">
-                            <a href="#popup-5" class="btn">
-                                Tech stack
-                            </a>
-
-                            <a href="https://antonrufus.github.io/nexter/"
-                               target="_blank"
-                               class="btn">
-                                Demo
-                            </a>
-
-                            <a href="https://github.com/AntonRufus/nexter/"
-                               target="_blank"
-                               class="btn">
-                                Code source
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- project's image -->
-                    <div class="project__image">
-                        <img src="./img/nexter.png" alt="Nexter">
-                    </div>
+                    <!-- button -->
+                    <a href="#project-7" class="btn popup__btn">Close</a>
+                  </div>
                 </div>
-            </div>
 
-            <!-- project #6 -->
-            <div class="project" id="project-6">
+                <!-- project's navigation -->
+                <div class="project__nav">
+                  <a href="#popup-7" class="btn"> Tech stack </a>
 
-                <!-- project's header -->
-                <h2 class="project__header">06 / Colorful clock</h2>
+                  <a
+                    href="https://antonrufus.github.io/javascript"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Demo
+                  </a>
 
-                <!-- project's body -->
-                <div class="project__body">
-
-                    <!-- project's description -->
-                    <div class="project__description">
-                        The bright design of this clock will help to cheer you up.
-
-                        <!-- project #6 tech stack popup -->
-                        <div class="popup" id="popup-6">
-                            <div class="popup__content">
-
-                                <!-- tech list -->
-                                <ul>
-
-                                    <!-- list header -->
-                                    <h2 class="project__header">Colorful clock</h2>
-
-                                    <!-- React -->
-                                    <li>
-                                        <ul>
-                                            <h3>React</h3>
-                                            <li>Hooks</li>
-                                        </ul>
-                                    </li>
-                                    <!-- CSS -->
-                                    <li>
-                                        <ul>
-                                            <h3>CSS</h3>
-                                            <li>CSS modules</li>
-                                        </ul>
-                                    </li>
-                                    <!-- JavaScript -->
-                                    <li>
-                                        <ul>
-                                            <h3>JavaScript</h3>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <!-- button -->
-                                <a href="#project-6" class="btn popup__btn">Close</a>
-                            </div>
-                        </div>
-
-                        <!-- project's navigation -->
-                        <div class="project__nav">
-                            <a href="#popup-6" class="btn">
-                                Tech stack
-                            </a>
-
-                            <a href="https://antonrufus.github.io/colorful-clock-react-app/"
-                               target="_blank"
-                               class="btn">
-                                Demo
-                            </a>
-
-                            <a href="https://github.com/AntonRufus/colorful-clock-react-app/"
-                               target="_blank"
-                               class="btn">
-                                Code source
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- project's image -->
-                    <div class="project__image">
-                        <img src="./img/clock.png" alt="Colorful clock">
-                    </div>
+                  <a
+                    href="https://github.com/AntonRufus/javascript"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Code source
+                  </a>
                 </div>
-            </div>
+              </div>
 
+              <!-- project's image -->
+              <div class="project__image">
+                <img src="./img/javascript.jpg" alt="JavaScript" />
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------------------------------------------------------------------------------- -->
+          <!-- project #3 -->
+          <div class="project" id="project-3">
+            <!-- project's header -->
+            <h2 class="project__header">04 / Nature tours</h2>
+
+            <!-- project's body -->
+            <div class="project__body">
+              <!-- project's description -->
+              <div class="project__description">
+                A landing page that includes modern CSS, animations and SASS.
+
+                <!-- project #3 tech stack popup -->
+                <div class="popup" id="popup-3">
+                  <div class="popup__content">
+                    <!-- tech list -->
+                    <ul>
+                      <!-- list header -->
+                      <h2 class="project__header">Nature tours</h2>
+
+                      <!-- HTML -->
+                      <li>
+                        <ul>
+                          <h3>HTML</h3>
+                        </ul>
+                      </li>
+
+                      <!-- CSS -->
+                      <li>
+                        <ul>
+                          <h3>CSS</h3>
+                          <li>Animation</li>
+                          <li>BEM</li>
+                          <li>Custom Grid Layout</li>
+                          <li>PostCSS</li>
+                          <li>SASS</li>
+                        </ul>
+                      </li>
+
+                      <!-- JavaScript -->
+                      <li>
+                        <ul>
+                          <h3>JavaScript</h3>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <!-- button -->
+                    <a href="#project-3" class="btn popup__btn">Close</a>
+                  </div>
+                </div>
+
+                <!-- project's navigation -->
+                <div class="project__nav">
+                  <a href="#popup-3" class="btn"> Tech stack </a>
+
+                  <a
+                    href="https://antonrufus.github.io/nature_tours/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/AntonRufus/nature_tours/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Code source
+                  </a>
+                </div>
+              </div>
+
+              <!-- project's image -->
+              <div class="project__image">
+                <img src="./img/nature.jpg" alt="Nature tours" />
+              </div>
+            </div>
+          </div>
+
+          <!-- project #4 -->
+          <div class="project" id="project-4">
+            <!-- project's header -->
+            <h2 class="project__header">05 / Trillo</h2>
+
+            <!-- project's body -->
+            <div class="project__body">
+              <!-- project's description -->
+              <div class="project__description">
+                In this project the focus is on flexbox and responsive layout.
+
+                <!-- project #4 tech stack popup -->
+                <div class="popup" id="popup-4">
+                  <div class="popup__content">
+                    <!-- tech list -->
+                    <ul>
+                      <!-- list header -->
+                      <h2 class="project__header">Trillo</h2>
+
+                      <!-- HTML -->
+                      <li>
+                        <ul>
+                          <h3>HTML</h3>
+                        </ul>
+                      </li>
+                      <!-- CSS -->
+                      <li>
+                        <ul>
+                          <h3>CSS</h3>
+                          <li>Flexbox</li>
+                          <li>PostCSS</li>
+                          <li>SASS</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <!-- button -->
+                    <a href="#project-4" class="btn popup__btn">Close</a>
+                  </div>
+                </div>
+
+                <!-- project's navigation -->
+                <div class="project__nav">
+                  <a href="#popup-4" class="btn"> Tech stack </a>
+
+                  <a
+                    href="https://antonrufus.github.io/trillo/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/AntonRufus/trillo/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Code source
+                  </a>
+                </div>
+              </div>
+
+              <!-- project's image -->
+              <div class="project__image">
+                <img src="./img/trillo.jpg" alt="Trillo" />
+              </div>
+            </div>
+          </div>
+
+          <!-- project #5 -->
+          <div class="project" id="project-5">
+            <!-- project's header -->
+            <h2 class="project__header">06 / Nexter</h2>
+
+            <!-- project's body -->
+            <div class="project__body">
+              <!-- project's description -->
+              <div class="project__description">
+                Modern website with responsive design for real estate business
+                made on the basis of Grid Layout.
+
+                <!-- project #5 tech stack popup -->
+                <div class="popup" id="popup-5">
+                  <div class="popup__content">
+                    <!-- tech list -->
+                    <ul>
+                      <!-- list header -->
+                      <h2 class="project__header">Nexter</h2>
+
+                      <!-- HTML -->
+                      <li>
+                        <ul>
+                          <h3>HTML</h3>
+                        </ul>
+                      </li>
+                      <!-- CSS -->
+                      <li>
+                        <ul>
+                          <h3>CSS</h3>
+                          <li>Grid</li>
+                          <li>PostCSS</li>
+                          <li>SASS</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <!-- button -->
+                    <a href="#project-5" class="btn popup__btn">Close</a>
+                  </div>
+                </div>
+
+                <!-- project's navigation -->
+                <div class="project__nav">
+                  <a href="#popup-5" class="btn"> Tech stack </a>
+
+                  <a
+                    href="https://antonrufus.github.io/nexter/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/AntonRufus/nexter/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Code source
+                  </a>
+                </div>
+              </div>
+
+              <!-- project's image -->
+              <div class="project__image">
+                <img src="./img/nexter.png" alt="Nexter" />
+              </div>
+            </div>
+          </div>
+
+          <!-- project #6 -->
+          <div class="project" id="project-6">
+            <!-- project's header -->
+            <h2 class="project__header">07 / Colorful clock</h2>
+
+            <!-- project's body -->
+            <div class="project__body">
+              <!-- project's description -->
+              <div class="project__description">
+                The bright design of this clock will help to cheer you up.
+
+                <!-- project #6 tech stack popup -->
+                <div class="popup" id="popup-6">
+                  <div class="popup__content">
+                    <!-- tech list -->
+                    <ul>
+                      <!-- list header -->
+                      <h2 class="project__header">Colorful clock</h2>
+
+                      <!-- React -->
+                      <li>
+                        <ul>
+                          <h3>React</h3>
+                          <li>Hooks</li>
+                        </ul>
+                      </li>
+                      <!-- CSS -->
+                      <li>
+                        <ul>
+                          <h3>CSS</h3>
+                          <li>CSS modules</li>
+                        </ul>
+                      </li>
+                      <!-- JavaScript -->
+                      <li>
+                        <ul>
+                          <h3>JavaScript</h3>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <!-- button -->
+                    <a href="#project-6" class="btn popup__btn">Close</a>
+                  </div>
+                </div>
+
+                <!-- project's navigation -->
+                <div class="project__nav">
+                  <a href="#popup-6" class="btn"> Tech stack </a>
+
+                  <a
+                    href="https://antonrufus.github.io/colorful-clock-react-app/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/AntonRufus/colorful-clock-react-app/"
+                    target="_blank"
+                    class="btn"
+                  >
+                    Code source
+                  </a>
+                </div>
+              </div>
+
+              <!-- project's image -->
+              <div class="project__image">
+                <img src="./img/clock.png" alt="Colorful clock" />
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- contacts -->
         <section class="contacts" id="contacts">
+          <!-- header -->
+          <div class="sub-header">My contacts</div>
 
-            <!-- header -->
-            <div class="sub-header">
-                My contacts
-            </div>
+          <!-- contacts list -->
+          <ul class="contacts__list">
+            <!----------------------------------------------------------------------------->
+            <li>
+              <a href="tel:+86-182-0167-71-21" target="_blank">
+                <div class="contacts__list-img">
+                  <img
+                    src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
+                    alt="WhatsApp"
+                    width="40"
+                    height="40"
+                  />
 
-            <!-- contacts list -->
-            <ul class="contacts__list">
-                <!----------------------------------------------------------------------------->
-                <li>
-                    <a href="tel:+86-182-0167-71-21" target="_blank">
-                        <div class="contacts__list-img">
-                            <img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png"
-                                 alt="WhatsApp"
-                                 width="40" height="40">
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Viber-512.png"
+                    alt="Viber"
+                    width="40"
+                    height="40"
+                  />
 
-                            <img src="https://cdn0.iconfinder.com/data/icons/social-circle-3/72/Viber-512.png"
-                                 alt="Viber"
-                                 width="40" height="40"/>
-
-                            <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/telegram-512.png"
-                                 alt="Telegram"
-                                 width="40" height="40"/>
-                        </div>
-                        <span>+86-182-0167-71-21</span>
-                    </a>
-                </li>
-                <!----------------------------------------------------------------------------->
-                <li>
-                    <a href="mailto:zhyvotovskyi@gmail.com" target="_blank">
-                        <div class="contacts__list-img">
-                            <img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/outlook-512.png"
-                                 alt="Email"
-                                 width="40" height="40"/>
-                        </div>
-                        <span>zhyvotovskyi@gmail.com</span>
-                    </a>
-                </li>
-                <!----------------------------------------------------------------------------->
-                <li class="contacts__list-one">
-                    <a href="https://www.linkedin.com/in/anton-zhyvotovskyi/" target="_blank">
-                        <div class="contacts__list-img">
-                            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_linkedin-512.png"
-                                 alt="LinkedIn"
-                                 width="40" height="40"/>
-                        </div>
-                        <span>Anton Zhyvotovskyi</span>
-                    </a>
-                </li>
-                <!----------------------------------------------------------------------------->
-                <li class="contacts__list-one">
-                    <a href="https://github.com/AntonRufus" target="_blank">
-                        <div class="contacts__list-img">
-                            <img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png"
-                                 alt="GitHub"
-                                 width="40" height="40"/>
-                        </div>
-                        <span>Anton Rufus</span>
-                    </a>
-                </li>
-            </ul>
+                  <img
+                    src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/telegram-512.png"
+                    alt="Telegram"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <span>+86-182-0167-71-21</span>
+              </a>
+            </li>
+            <!----------------------------------------------------------------------------->
+            <li>
+              <a href="mailto:zhyvotovskyi@gmail.com" target="_blank">
+                <div class="contacts__list-img">
+                  <img
+                    src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/outlook-512.png"
+                    alt="Email"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <span>zhyvotovskyi@gmail.com</span>
+              </a>
+            </li>
+            <!----------------------------------------------------------------------------->
+            <li class="contacts__list-one">
+              <a
+                href="https://www.linkedin.com/in/anton-zhyvotovskyi/"
+                target="_blank"
+              >
+                <div class="contacts__list-img">
+                  <img
+                    src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_linkedin-512.png"
+                    alt="LinkedIn"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <span>Anton Zhyvotovskyi</span>
+              </a>
+            </li>
+            <!----------------------------------------------------------------------------->
+            <li class="contacts__list-one">
+              <a href="https://github.com/AntonRufus" target="_blank">
+                <div class="contacts__list-img">
+                  <img
+                    src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png"
+                    alt="GitHub"
+                    width="40"
+                    height="40"
+                  />
+                </div>
+                <span>Anton Rufus</span>
+              </a>
+            </li>
+          </ul>
         </section>
 
         <!-- footer -->
         <section class="footer">
-            <a href="#">2021 &copy; Anton Zhyvotovskyi.</a>
-            <!--paste QR for github page-->
+          <a href="#">2021 &copy; Anton Zhyvotovskyi.</a>
+          <!--paste QR for github page-->
         </section>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
