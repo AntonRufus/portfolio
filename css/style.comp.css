@@ -1,11 +1,11 @@
 :root {
-  --color-primary: #42B9FC;
-  --color-primary-light: #A3D3FF;
-  --color-primary-dark: #00AFFA;
+  --color-primary: #42b9fc;
+  --color-primary-light: #a3d3ff;
+  --color-primary-dark: #00affa;
   --color-bgc-dark: #000000;
   --color-bgc-light: #003853;
-  --shadow-dark-30: 0 2rem 6rem rgba(0, 0, 0, .30);
-  --shadow-light-06: 0 2rem 5rem rgba(0, 0, 0, .06); }
+  --shadow-dark-30: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light-06: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
 
 *,
 *::after,
@@ -89,13 +89,13 @@ body {
     text-shadow: none; } }
 
 .logo {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   margin-left: 11%;
   width: 8rem;
   z-index: 10; }
   .logo:hover {
     border-bottom: 0.3rem solid var(--color-primary);
-    padding-bottom: .2rem;
+    padding-bottom: 0.2rem;
     text-decoration: underline; }
   @media only screen and (max-width: 68.75em) {
     .logo {
@@ -176,7 +176,7 @@ body {
       text-transform: uppercase;
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-primary) 50%);
       background-size: 300%;
-      transition: all .5s; }
+      transition: all 0.5s; }
     .nav-mini__link:hover, .nav-mini__link:active {
       background-position: 100%;
       color: var(--color-bgc-light);
@@ -195,15 +195,15 @@ body {
         height: 2px;
         background-color: var(--color-primary-light);
         display: inline-block;
-        transition: all .3s; }
+        transition: all 0.3s; }
       .nav-mini__icon::before, .nav-mini__icon::after {
         content: "";
         position: absolute;
         left: 0; }
       .nav-mini__icon::before {
-        top: -.8rem; }
+        top: -0.8rem; }
       .nav-mini__icon::after {
-        top: .8rem; }
+        top: 0.8rem; }
     .nav-mini__button:hover .nav-mini__icon::before {
       top: -1rem; }
     .nav-mini__button:hover .nav-mini__icon::after {
@@ -212,11 +212,11 @@ body {
       background-color: transparent; }
     .nav-mini__checkbox:checked ~ .nav-mini__button .nav-mini__icon::before {
       transform: rotate(225deg);
-      transition: all .3s;
+      transition: all 0.3s;
       top: 0; }
     .nav-mini__checkbox:checked ~ .nav-mini__button .nav-mini__icon::after {
       transform: rotate(-225deg);
-      transition: all .3s;
+      transition: all 0.3s;
       top: 0; }
   .nav__item {
     margin: 0 1rem; }
@@ -234,7 +234,7 @@ body {
     font-size: 2.5rem;
     outline: none;
     padding: 1rem;
-    transition: all .2s;
+    transition: all 0.2s;
     width: 11rem;
     position: relative;
     /*&-resume {
@@ -278,7 +278,7 @@ body {
   margin-left: 11%;
   display: flex;
   flex-direction: column;
-  transition: all .2s; }
+  transition: all 0.2s; }
   @media only screen and (max-width: 68.75em) {
     .introduction {
       margin-top: 25rem;
@@ -307,7 +307,7 @@ body {
     left: 0;
     top: 0;
     z-index: -1;
-    opacity: .4;
+    opacity: 0.4;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
@@ -324,11 +324,11 @@ body {
         z-index: inherit; } }
     .introduction__text-position {
       color: var(--color-primary);
-      transition: all .2s;
+      transition: all 0.2s;
       animation: pulsate 3s infinite; }
       .introduction__text-position:hover {
         text-shadow: 0 1rem 1rem var(--color-primary-dark);
-        transition: all .2s; }
+        transition: all 0.2s; }
   .introduction__name {
     color: var(--color-primary-dark);
     font-size: 9rem;
@@ -350,7 +350,7 @@ body {
     margin-top: 18%;
     outline: none;
     padding: 1.5rem 1.5rem;
-    transition: all .2s;
+    transition: all 0.2s;
     width: 6rem;
     z-index: 10;
     /*&:hover {
@@ -412,7 +412,7 @@ body {
         text-align: justify; } }
     .about__text span {
       line-height: 1.3;
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
 
 .banner {
   position: relative;
@@ -455,7 +455,7 @@ body {
     height: 100%;
     width: 100%;
     z-index: -2;
-    opacity: .3;
+    opacity: 0.3;
     overflow: hidden; }
     .skills__bg-video__content {
       height: 100%;
@@ -513,6 +513,14 @@ body {
       @media only screen and (max-width: 29.7em) {
         .skills__soft ul {
           margin-top: 0; } }
+      .skills__soft ul li {
+        height: 12.5%; }
+        @media only screen and (max-width: 75em) {
+          .skills__soft ul li {
+            height: 11%; } }
+        @media only screen and (max-width: 57.85em) {
+          .skills__soft ul li {
+            height: 14%; } }
     .skills__soft .sub-header {
       margin-bottom: 2.3rem; }
   .skills__tech, .skills__soft {
@@ -530,7 +538,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: 1;
-  opacity: .5;
+  opacity: 0.5;
   overflow: hidden; }
   .bg-video #particles-js {
     height: 100%;
@@ -560,7 +568,7 @@ body {
         min-height: 50rem; } }
     .projects .project__header {
       color: var(--color-primary-dark);
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
     .projects .project__body {
       display: flex;
       justify-content: space-between; }
@@ -575,10 +583,10 @@ body {
       .projects .project__description-span {
         font-size: 1rem;
         color: var(--color-primary);
-        transition: all .2s;
+        transition: all 0.2s;
         text-decoration: underline;
         margin-top: 1rem;
-        margin-left: 12.5rem;
+        margin-left: 4rem;
         transform: scale(1); }
         @media only screen and (max-width: 68.75em) {
           .projects .project__description-span {
@@ -591,16 +599,16 @@ body {
             margin-left: 0;
             font-size: 1.4rem; } }
         .projects .project__description-span:hover {
-          transform: scale(2); }
+          transform: scale(1.2); }
           @media only screen and (max-width: 68.75em) {
             .projects .project__description-span:hover {
-              transform: scale(1.6); } }
+              transform: scale(1.2); } }
           @media only screen and (max-width: 48.45em) {
             .projects .project__description-span:hover {
               transform: scale(1); } }
     .projects .project__image img {
       width: 40rem;
-      transition: all .5s;
+      transition: all 0.5s;
       position: absolute;
       top: 0;
       left: 60%;
@@ -668,7 +676,7 @@ body {
     padding: 0 1rem;
     box-shadow: 0 0.1rem 0.2rem var(--color-primary-light);
     border-radius: 2rem;
-    transition: all .1s;
+    transition: all 0.1s;
     transform: translateY(0px); }
     @media only screen and (max-width: 57.85em) {
       .projects .btn {
@@ -678,7 +686,7 @@ body {
       color: var(--color-primary-dark);
       box-shadow: 0 0.5rem 2rem var(--color-primary-light);
       transform: translateY(-2px);
-      transition: all .1s; }
+      transition: all 0.1s; }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.8);
@@ -691,7 +699,7 @@ body {
   width: 100%;
   z-index: 5000;
   display: flex;
-  transition: all .4s .2s; }
+  transition: all 0.4s 0.2s; }
   @supports (-webkit-backdrop-filter: blur(10px) hue-rotate(25deg)) or (backdrop-filter: blur(10px) hue-rotate(25deg)) {
     .popup {
       background-color: rgba(0, 0, 0, 0.8);
@@ -702,7 +710,7 @@ body {
     overflow: hidden;
     opacity: 0;
     transform: scale(0);
-    transition: all .4s .2s;
+    transition: all 0.4s 0.2s;
     padding: 2rem 5rem;
     margin: auto; }
     @media only screen and (max-width: 25em) {
@@ -711,10 +719,10 @@ body {
     .popup__content h2 {
       margin-left: -1.5rem;
       text-shadow: 0 0.2rem 0.5rem var(--color-primary-dark);
-      transition: all .2s; }
+      transition: all 0.2s; }
       .popup__content h2:hover {
         text-shadow: 0 0.5rem 1rem var(--color-primary-dark);
-        transition: all .2s; }
+        transition: all 0.2s; }
   .popup:target {
     opacity: 1;
     visibility: visible;
@@ -732,7 +740,7 @@ body {
     margin-bottom: 1rem; }
     @media only screen and (max-width: 25em) {
       .popup ul {
-        margin-bottom: .1rem; } }
+        margin-bottom: 0.1rem; } }
     .popup ul h3 {
       text-shadow: 0 0.1rem 0.2rem var(--color-primary-light); }
   .popup__btn {
