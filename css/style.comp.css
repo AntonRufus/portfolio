@@ -518,6 +518,9 @@ body {
         @media only screen and (max-width: 75em) {
           .skills__soft ul li {
             height: 11%; } }
+        @media only screen and (min-height: 68.75em) {
+          .skills__soft ul li {
+            height: 11%; } }
         @media only screen and (max-width: 57.85em) {
           .skills__soft ul li {
             height: 14%; } }
